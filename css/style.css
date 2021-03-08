@@ -1,0 +1,47 @@
+/* GENERAL */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* UTILITIES */
+/* Layout */
+.padX-0{
+    padding-left: 0;
+    padding-right: 0;
+}
+/* Buttons */
+.my-btn{
+    font-weight: bold;
+    color: #006aff;
+    border: 1px solid #006aff;
+}
+
+/* HEADER */
+.main-header {
+    line-height: 65px;
+}
+/* Site Logo */
+.main-header img.site-logo{
+    width: 160px;
+    margin-bottom: 10px;
+}
+/* Hamburger */
+.main-header .hamburger{
+    font-size: 24px;
+    color: #006aff;
+}
+/* Header Navbars */
+.main-header .header-navbar{
+    color: #031c4e;
+    font-size: 16px;
+    font-weight: bold;
+}
+.header-navbar .list-inline{
+    margin-bottom: 0;
+}
+.header-navbar .list-inline li.drop::after{
+    content:' \f078';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
