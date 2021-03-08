@@ -3,22 +3,54 @@
     margin: 0;
     padding: 0;
 }
-
+a{
+    color: #006aff;
+}
 /* UTILITIES */
 /* Layout */
 .padX-0{
     padding-left: 0;
     padding-right: 0;
 }
-/* Buttons */
-.my-btn{
-    font-weight: bold;
+
+/* Text */
+.txt-white{
+    color: #fff;
+}
+.txt-dark-blue{
+    color: #031c4e;
+}
+.txt-cobalt{
     color: #006aff;
-    border: 1px solid #006aff;
 }
 
-/* HEADER */
-.main-header {
+/* Buttons */
+.my-btn-long{
+    display: block;
+}
+.my-btn-sign-up{
+    border: 1px solid #006aff;
+}
+.my-btn-dodgerblue{
+    color: #fff;
+    background-color: #579aff;
+}
+.my-btn-google{
+    position: relative;
+    color: #626262;
+    font-weight: bold;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.my-btn-google img.google-icon{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    height: 20px;
+}
+
+/* SITE HEADER */
+header.main-header {
     line-height: 65px;
 }
 /* Site Logo */
@@ -44,4 +76,60 @@
     content:' \f078';
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+}
+
+/* SITE MAIN */
+/* HERO SECT. */
+section.hero{
+    padding: 60px 0;
+    background-image: url(../img/bg-banner-home.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* Title */
+.hero h1{
+    font-size: 38px;
+    font-weight: 600;
+}
+.hero p{
+    font-size: 24px;
+    color: #bbcdff;
+}
+/* Form */
+.hero .my-form{
+    padding: 35px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.hero .my-form .form-title{
+    font-size: 28px;
+    font-weight: bold;
+}
+/* Form Group */
+.hero .my-form .my-form-group{
+    margin-bottom: 10px;
+}
+.my-form .my-form-group .my-form-control{
+    height: auto;
+    padding: 10px 5px;
+    border-color: #eee;
+    box-shadow: none;
+}
+.my-form .my-form-group .my-form-control::placeholder{
+    font-size: 16px;
+    color: #7e7e7e;
+}
+/* Terms */
+.hero .my-form .terms{
+    font-size: 12px;
+}
+.hero .my-form .terms a{
+    text-decoration: underline;
+}
+/* RESPONSIVE */
+/* Screen >= 992px */
+@media screen and (min-width: 992px){
+    .hero h1{
+        font-size: 60px;
+    }
 }
