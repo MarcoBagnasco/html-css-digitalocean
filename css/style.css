@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    color: #6f7b97;
+}
 a{
     color: #006aff;
 }
@@ -11,6 +14,11 @@ a{
 .padX-0{
     padding-left: 0;
     padding-right: 0;
+}
+
+/* Backgrounds */
+.bg-gray{
+    background-color: #f3f5f9;
 }
 
 /* Text */
@@ -22,6 +30,12 @@ a{
 }
 .txt-cobalt{
     color: #006aff;
+}
+
+/* Link */
+.arrow-link{
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* Buttons */
@@ -131,5 +145,28 @@ section.hero{
 @media screen and (min-width: 992px){
     .hero h1{
         font-size: 60px;
+    }
+}
+
+/* CUSTOMERS SECT. */
+section.customers{
+    padding: 40px 20px 30px;
+}
+.customers h4{
+    font-size: 17px;
+    font-weight: bold;
+}
+/* Customers List */
+.customers .customers-list li{
+    width: calc((100% / 2) - 5px);
+}
+.customers .customers-list li img{
+    width: 100%;
+}
+/* RESPONSIVE */
+/* Screen >= 768px */
+@media screen and (min-width: 768px){
+    .customers .customers-list li{
+        width: calc((100% / 6) - 5px);
     }
 }
