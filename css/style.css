@@ -20,6 +20,9 @@ img{
 }
 /* UTILITIES */
 /* Layout */
+.mt-50{
+    margin-top: 50px;
+}
 .mt-60{
     margin-top: 60px;
 }
@@ -49,6 +52,10 @@ img{
     font-size: 16px;
     font-weight: bold;
 }
+.arrow-link::after{
+    content: ' >';
+    padding-left: 5px;
+}
 
 /* Buttons */
 .my-btn-long{
@@ -72,7 +79,7 @@ img{
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
-    height: 20px;
+    width: 20px;
 }
 
 /* Property Box */
@@ -85,6 +92,10 @@ img{
 }
 .property-box p{
     font-size: 16px;
+}
+.property-box a{
+    display: inline-block;
+    margin-bottom: 10px;
 }
 .property-box{
     margin-bottom: 20px;
@@ -293,4 +304,12 @@ section.screenshot{
 }
 .screenshot p{
     font-size: 24px;
+}
+
+/* FEATURE SECT. */
+section.features{
+    padding: 60px 0;
+}
+.features h2{
+    font-size: 34px;
 }
