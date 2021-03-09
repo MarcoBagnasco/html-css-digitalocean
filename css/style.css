@@ -15,6 +15,9 @@ h4{
 a{
     color: #006aff;
 }
+img{
+    width: 100%;
+}
 /* UTILITIES */
 /* Layout */
 .mt-60{
@@ -73,11 +76,8 @@ a{
 }
 
 /* Property Box */
-.property-box{
-    margin-bottom: 20px;
-}
 .property-box img{
-    width: 540x;
+    width: 50px;
     margin-bottom: 10px;
 }
 .property-box h4{
@@ -85,6 +85,79 @@ a{
 }
 .property-box p{
     font-size: 16px;
+}
+.property-box{
+    margin-bottom: 20px;
+}
+
+/* Slider */
+.slider{
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+.slider .slide{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.slider .slide .caption{
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.slide::before,
+.slide::after{
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+.slide::before{
+    content:' \f104';
+    color: #6f7b97;
+    right: 100%;
+}
+.slide::after{
+    content:' \f105';
+    color: #031c4e;
+    left: 100%;
+}
+
+/* RESPONSIVE */
+/* Screen >= 768px */
+@media screen and (min-width: 768px){
+    .slide::before,
+    .slide::after{
+    display: block;
+    }
+}
+/* Screen >= 992px */
+@media screen and (min-width: 992px){
+    .slider{
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+    .slider .slide{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+/* Scroll Spot */
+.scroll-spot{
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #006aff;
+    border: 1px solid #006aff;
+}
+.scroll-spot.spot-empty{
+    background-color: transparent;
 }
 
 /* SITE HEADER */
@@ -182,9 +255,6 @@ section.customers{
 .customers .customers-list li{
     width: calc((100% / 2) - 5px);
 }
-.customers .customers-list li img{
-    width: 100%;
-}
 /* RESPONSIVE */
 /* Screen >= 768px */
 @media screen and (min-width: 768px){
@@ -213,3 +283,14 @@ section.configuration{
     border-left: 2px solid #ccc;
 }
 
+/* SCREENSHOT SECT. */
+section.screenshot{
+    padding: 60px 0;
+}
+.screenshot h2{
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+.screenshot p{
+    font-size: 24px;
+}
