@@ -6,11 +6,20 @@
 body{
     color: #6f7b97;
 }
+h1,
+h2,
+h3,
+h4{
+    font-weight: bold;
+}
 a{
     color: #006aff;
 }
 /* UTILITIES */
 /* Layout */
+.mt-60{
+    margin-top: 60px;
+}
 .padX-0{
     padding-left: 0;
     padding-right: 0;
@@ -63,6 +72,21 @@ a{
     height: 20px;
 }
 
+/* Property Box */
+.property-box{
+    margin-bottom: 20px;
+}
+.property-box img{
+    width: 540x;
+    margin-bottom: 10px;
+}
+.property-box h4{
+    font-size: 20px;
+}
+.property-box p{
+    font-size: 16px;
+}
+
 /* SITE HEADER */
 header.main-header {
     line-height: 65px;
@@ -103,7 +127,6 @@ section.hero{
 /* Title */
 .hero h1{
     font-size: 38px;
-    font-weight: 600;
 }
 .hero p{
     font-size: 24px;
@@ -154,7 +177,6 @@ section.customers{
 }
 .customers h4{
     font-size: 17px;
-    font-weight: bold;
 }
 /* Customers List */
 .customers .customers-list li{
@@ -170,3 +192,24 @@ section.customers{
         width: calc((100% / 6) - 5px);
     }
 }
+
+/* CONFIGURATION SECT. */
+section.configuration{
+    padding: 60px 0;
+}
+.configuration h2{
+    font-size: 34px;
+}
+.configuration p{
+    font-size: 24px;
+}
+/* Configuration List */
+.configuration .list-unstyled{
+    margin-bottom: 30px;
+}
+.configuration .list-unstyled li{
+    padding: 10px;
+    font-size: 20px;
+    border-left: 2px solid #ccc;
+}
+
