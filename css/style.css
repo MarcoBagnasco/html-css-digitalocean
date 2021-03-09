@@ -49,6 +49,9 @@ img{
 .txt-cobalt{
     color: #006aff;
 }
+.bold{
+    font-weight: bold;
+}
 
 /* Link */
 .arrow-link{
@@ -115,14 +118,18 @@ img{
 .slider .slide{
     position: relative;
     display: inline-block;
-    width: 70%;
+    width: 80%;
     padding-left: 15px;
     padding-right: 15px;
 }
+.slider .slide .slide-white{
+    padding: 40px 0;
+    background-color: #fff;
+    border-radius: 5px;
+}
 .slider .slide .caption{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 18px;
-    font-weight: bold;
 }
 .slide::before,
 .slide::after{
@@ -150,7 +157,10 @@ img{
 @media screen and (min-width: 768px){
     .slide::before,
     .slide::after{
-    display: block;
+        display: block;
+    }
+    .slider .slide{
+        width: 60%;
     }
 }
 /* Screen >= 992px */
@@ -195,7 +205,6 @@ header.main-header {
 .main-header .header-navbar{
     color: #031c4e;
     font-size: 16px;
-    font-weight: bold;
 }
 .header-navbar .list-inline{
     margin-bottom: 0;
@@ -230,7 +239,7 @@ section.hero{
 }
 .hero .my-form .form-title{
     font-size: 28px;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 /* Form Group */
 .hero .my-form .my-form-group{
@@ -310,6 +319,9 @@ section.screenshot{
 .screenshot p{
     font-size: 24px;
 }
+.screenshot .slider img{
+    margin-bottom: 20px;
+}
 
 /* FEATURE SECT. */
 section.features{
@@ -343,3 +355,26 @@ section.regions{
     border-bottom: 0;
 }
 
+/* REVIEWS SECT. */
+section.reviews{
+    padding: 60px;
+    font-size: 18px;
+}
+.reviews h2{
+    font-size: 34px;
+}
+/* Reviews Slider */
+.reviews .slider{
+    margin-bottom: 30px;
+}
+.reviews .slider img{
+    max-width: 320px;
+    margin-bottom: 30px;
+}
+.reviews .slider p{
+    font-size: 24px;
+}
+.reviews .slider a{
+    display: inline-block;
+    margin-top: 30px;
+}
