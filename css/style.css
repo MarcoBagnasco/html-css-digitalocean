@@ -76,6 +76,14 @@ img{
     color: #fff;
     background-color: #579aff;
 }
+.my-btn-white{
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #006aff;
+    background-color: #fff;
+    border-radius: 8px;
+}
 .my-btn-google{
     position: relative;
     color: #626262;
@@ -376,5 +384,16 @@ section.reviews{
 }
 .reviews .slider a{
     display: inline-block;
+    margin-top: 30px;
+}
+
+/* GET STARTED SECT. */
+section.get-started{
+    padding: 60px 0;
+}
+.get-started h2{
+    font-size: 34px;
+}
+.get-started .btn{
     margin-top: 30px;
 }
