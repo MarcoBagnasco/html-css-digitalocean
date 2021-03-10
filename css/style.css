@@ -211,12 +211,12 @@ ul li{
 }
 .chat .chat-icon{
     position: relative;
+    margin-bottom: 20px;
     width: 70px;
     height: 70px;
     line-height: 70px;
     background-color: #006aff;
     border-radius: 5px;
-    /* filter: drop-shadow(0 0 3px rgba(0, 0, 0, .5)); */
     cursor: pointer;
 }
 .chat-icon .chat-badge{
@@ -234,13 +234,11 @@ ul li{
 .chat .chat-baloon{
     position: relative;
     display: inline-block;
-    margin-top: 20px;
     padding: 10px;
     width: 350px;
     font-size: 18px;
     background-color: #fff;
     border-radius: 5px;
-    /* filter: drop-shadow(0 0 3px rgba(0, 0, 0, .5)); */
 }
 .chat .chat-baloon::after{
     content: '';
@@ -252,6 +250,19 @@ ul li{
     height: 10px;
     background-color: #fff;
     transform: rotate(45deg);
+}
+/* RESPONSIVE */
+/* Screen >= 992px */
+@media screen and (min-width: 992px){
+    .chat{
+        bottom: 70px;
+        left: unset;
+        right: 45px;
+    }
+    .chat .chat-icon{
+        float: right;
+        margin-left: 20px;
+    }
 }
 
 /* SITE HEADER */
@@ -498,4 +509,11 @@ footer.main-footer{
 }
 .main-footer nav{
     margin-bottom: 15px;
+}
+/* RESPONSIVE */
+/* Screen >= 992px */
+@media screen and (min-width: 992px){
+    footer.main-footer{
+        padding-bottom: 100px;
+    }
 }
