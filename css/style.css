@@ -19,6 +19,9 @@ img{
 a{
     color: #006aff;
 }
+a:hover{
+    text-decoration: none;
+}
 ul li{
     cursor: pointer;
 }
@@ -77,9 +80,19 @@ ul li{
 .my-btn-sign-up{
     border: 1px solid #006aff;
 }
+.my-btn-sign-up:hover{
+    color: #031c4e;
+    background-color: #006aff50;
+    border-color: #031c4e;
+}
+
 .my-btn-dodgerblue{
     color: #fff;
     background-color: #579aff;
+}
+.my-btn-dodgerblue:hover{
+    color: #fff;
+    background-color: #4c7fca;
 }
 .my-btn-white{
     padding: 12px 20px;
@@ -95,6 +108,10 @@ ul li{
     font-weight: bold;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
 }
+.my-btn-google:hover{
+    background-color: #62626254;
+}
+
 .my-btn-google img.google-icon{
     position: absolute;
     top: 50%;
@@ -219,6 +236,20 @@ ul li{
     border-radius: 5px;
     cursor: pointer;
 }
+.chat .chat-icon:hover .chat-badge{
+    animation: bounce .7s linear infinite;
+}
+@keyframes bounce {
+    to,from {
+        line-height: 27px;
+    }
+    25%{
+        line-height: 17px;
+    }
+    65%{
+        line-height: 30px;
+    }
+}
 .chat-icon .chat-badge{
     position: absolute;
     top: -10px;
@@ -302,6 +333,9 @@ header.main-header {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
 }
+.header-navbar .list-inline li:hover{
+    color: #006aff;
+}
 
 /* SITE MAIN */
 /* HERO SECT. */
@@ -370,6 +404,10 @@ section.customers{
 .customers .customers-list li{
     width: calc((100% / 2) - 5px);
 }
+.customers .customers-list img:hover{
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, .3));
+}
+
 /* RESPONSIVE */
 /* Screen >= 768px */
 @media screen and (min-width: 768px){
@@ -394,6 +432,9 @@ section.configuration{
     padding: 10px;
     font-size: 20px;
     border-left: 2px solid #ccc;
+}
+.configuration .list-unstyled li:hover{
+    background-color: #62626244;
 }
 
 /* SCREENSHOT SECT. */
@@ -477,6 +518,10 @@ section.get-started{
 .get-started .btn{
     margin-top: 30px;
 }
+.get-started .btn:hover{
+    color: #fff;
+    background-color: #006aff;
+}
 
 /* SITE FOOTER */
 footer.main-footer{
@@ -493,7 +538,6 @@ footer.main-footer{
 .main-footer .made{
     color: #5a6887;
 }
-/* Footer Nav */
 .main-footer .list-inline{
     margin: 10px 0;
 }
@@ -504,16 +548,23 @@ footer.main-footer{
     font-size: 28px;
     color: #7a859d;
 }
+.main-footer .list-inline a:hover{
+    color: #fff;
+}
+/* Footer Nav */
+.main-footer nav{
+    margin-bottom: 15px;
+}
 .main-footer .list-unstyled li{
     margin-bottom: 10px;
 }
-.main-footer nav{
-    margin-bottom: 15px;
+.main-footer .list-unstyled li:hover{
+    color: #fff;
 }
 /* RESPONSIVE */
 /* Screen >= 992px */
 @media screen and (min-width: 992px){
     footer.main-footer{
-        padding-bottom: 100px;
+        padding-bottom: 140px;
     }
 }
