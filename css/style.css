@@ -4,6 +4,7 @@
     padding: 0;
 }
 body{
+    padding-top: 65px;
     color: #6f7b97;
 }
 h1,
@@ -202,7 +203,13 @@ ul li{
 
 /* SITE HEADER */
 header.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     line-height: 65px;
+    background-color: #fff;
+    z-index: 10;
 }
 /* Site Logo */
 .main-header img.site-logo{
@@ -214,6 +221,10 @@ header.main-header {
     font-size: 24px;
     color: #006aff;
 }
+.main-header .hamburger i{
+    cursor: pointer;
+}
+
 /* Header Navbars */
 .main-header .header-navbar{
     color: #031c4e;
