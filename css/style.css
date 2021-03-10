@@ -201,6 +201,59 @@ ul li{
     background-color: transparent;
 }
 
+/* CHAT */
+.chat{
+    position: fixed;
+    bottom: 70px;
+    left: 45px;
+    z-index: 10;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, .5));
+}
+.chat .chat-icon{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background-color: #006aff;
+    border-radius: 5px;
+    /* filter: drop-shadow(0 0 3px rgba(0, 0, 0, .5)); */
+    cursor: pointer;
+}
+.chat-icon .chat-badge{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 35px;
+    height: 35px;
+    line-height: 27px;
+    color: #fff;
+    background-color: #f00;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+.chat .chat-baloon{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    width: 350px;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 5px;
+    /* filter: drop-shadow(0 0 3px rgba(0, 0, 0, .5)); */
+}
+.chat .chat-baloon::after{
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    right: -5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    transform: rotate(45deg);
+}
+
 /* SITE HEADER */
 header.main-header {
     position: fixed;
@@ -416,7 +469,7 @@ section.get-started{
 
 /* SITE FOOTER */
 footer.main-footer{
-    padding: 60px 0;
+    padding: 60px 0 220px;
     font-size: 18px;    
     color: #7a859d;
     background-color: #031c4e;
