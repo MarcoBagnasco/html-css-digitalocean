@@ -73,6 +73,9 @@ footer{
 }
 
 /* Text */
+.bold{
+    font-weight: bold;
+}
 .txt-white{
     color: #fff;
 }
@@ -82,8 +85,8 @@ footer{
 .txt-cobalt{
     color: #006aff;
 }
-.bold{
-    font-weight: bold;
+.hover-txt-white:hover{
+    color: #fff;
 }
 
 /* Link */
@@ -112,18 +115,15 @@ footer{
 }
 
 .my-btn-dodgerblue{
-    color: #fff;
     background-color: #579aff;
 }
 .my-btn-dodgerblue:hover{
-    color: #fff;
     background-color: #4c7fca;
 }
 .my-btn-white{
     padding: 12px 20px;
     font-weight: bold;
     font-size: 18px;
-    color: #006aff;
     background-color: #fff;
     border-radius: 8px;
 }
@@ -264,7 +264,6 @@ footer{
     width: 35px;
     height: 35px;
     line-height: 27px;
-    color: #fff;
     background-color: #f00;
     border-radius: 50%;
     border: 5px solid #fff;
@@ -377,16 +376,11 @@ header.main-header {
 /* Hamburger */
 .main-header .hamburger{
     font-size: 24px;
-    color: #006aff;
 }
 .main-header .hamburger i{
     cursor: pointer;
 }
-
 /* Header Navbars */
-.main-header .header-navbar{
-    color: #031c4e;
-}
 .header-navbar .list-inline{
     margin-bottom: 0;
 }
@@ -514,7 +508,6 @@ section.reviews{
 
 /* GET STARTED SECT. */
 .get-started .btn:hover{
-    color: #fff;
     background-color: #006aff;
 }
 
